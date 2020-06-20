@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3245555249E654500056A4C /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3245554249E654500056A4C /* RecordTableViewCell.swift */; };
 		A376A86E249D56A60037D930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376A86D249D56A60037D930 /* AppDelegate.swift */; };
 		A376A870249D56A60037D930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376A86F249D56A60037D930 /* SceneDelegate.swift */; };
 		A376A872249D56A60037D930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376A871249D56A60037D930 /* ViewController.swift */; };
 		A376A875249D56A60037D930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A376A873249D56A60037D930 /* Main.storyboard */; };
 		A376A877249D56A90037D930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A376A876249D56A90037D930 /* Assets.xcassets */; };
 		A376A87A249D56A90037D930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A376A878249D56A90037D930 /* LaunchScreen.storyboard */; };
+		A376A883249D56DF0037D930 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376A882249D56DF0037D930 /* BaseRepository.swift */; };
+		A376A885249D57D90037D930 /* CrudRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376A884249D57D90037D930 /* CrudRepository.swift */; };
+		A376A887249D5A410037D930 /* SubscriptionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376A886249D5A410037D930 /* SubscriptionWrapper.swift */; };
+		A376A889249D5C880037D930 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376A888249D5C880037D930 /* DataConnection.swift */; };
+		A3E01944249DFD7100383B22 /* RecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E01943249DFD7100383B22 /* RecordRepository.swift */; };
+		A3E01948249DFD9700383B22 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E01947249DFD9700383B22 /* Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3245554249E654500056A4C /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		A376A86A249D56A60037D930 /* ReacitveRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReacitveRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A376A86D249D56A60037D930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A376A86F249D56A60037D930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		A376A876249D56A90037D930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A376A879249D56A90037D930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A376A87B249D56A90037D930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A376A882249D56DF0037D930 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		A376A884249D57D90037D930 /* CrudRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudRepository.swift; sourceTree = "<group>"; };
+		A376A886249D5A410037D930 /* SubscriptionWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionWrapper.swift; sourceTree = "<group>"; };
+		A376A888249D5C880037D930 /* DataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
+		A3E01943249DFD7100383B22 /* RecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRepository.swift; sourceTree = "<group>"; };
+		A3E01947249DFD9700383B22 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A324554F249E599100056A4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3245550249E599500056A4C /* TableViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3245550249E599500056A4C /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				A3245551249E59AA00056A4C /* Cells */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		A3245551249E59AA00056A4C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A3245554249E654500056A4C /* RecordTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A376A861249D56A60037D930 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +94,9 @@
 		A376A86C249D56A60037D930 /* ReacitveRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				A324554F249E599100056A4C /* Views */,
+				A3E01945249DFD8700383B22 /* DAL */,
+				A376A881249D56C80037D930 /* Repositories */,
 				A376A86D249D56A60037D930 /* AppDelegate.swift */,
 				A376A86F249D56A60037D930 /* SceneDelegate.swift */,
 				A376A871249D56A60037D930 /* ViewController.swift */,
@@ -65,6 +106,50 @@
 				A376A87B249D56A90037D930 /* Info.plist */,
 			);
 			path = ReacitveRepositories;
+			sourceTree = "<group>";
+		};
+		A376A881249D56C80037D930 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A3E01942249DFD5500383B22 /* DataRepositories */,
+				A3E01941249DFD4900383B22 /* Base */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A3E01941249DFD4900383B22 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A376A882249D56DF0037D930 /* BaseRepository.swift */,
+				A376A884249D57D90037D930 /* CrudRepository.swift */,
+				A376A886249D5A410037D930 /* SubscriptionWrapper.swift */,
+				A376A888249D5C880037D930 /* DataConnection.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A3E01942249DFD5500383B22 /* DataRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				A3E01943249DFD7100383B22 /* RecordRepository.swift */,
+			);
+			path = DataRepositories;
+			sourceTree = "<group>";
+		};
+		A3E01945249DFD8700383B22 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				A3E01946249DFD8E00383B22 /* Models */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		A3E01946249DFD8E00383B22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3E01947249DFD9700383B22 /* Record.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E01944249DFD7100383B22 /* RecordRepository.swift in Sources */,
+				A376A887249D5A410037D930 /* SubscriptionWrapper.swift in Sources */,
+				A3E01948249DFD9700383B22 /* Record.swift in Sources */,
 				A376A872249D56A60037D930 /* ViewController.swift in Sources */,
+				A376A885249D57D90037D930 /* CrudRepository.swift in Sources */,
+				A376A889249D5C880037D930 /* DataConnection.swift in Sources */,
 				A376A86E249D56A60037D930 /* AppDelegate.swift in Sources */,
+				A376A883249D56DF0037D930 /* BaseRepository.swift in Sources */,
 				A376A870249D56A60037D930 /* SceneDelegate.swift in Sources */,
+				A3245555249E654500056A4C /* RecordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsj.ReacitveRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsj.ReacitveRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
